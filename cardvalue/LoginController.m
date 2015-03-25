@@ -101,7 +101,10 @@
                 } else {
                     [MyUitl showAlert:nil :@"用户名或密码不正确"];
                 }
+            } else {
+               NSLog(@"move failed:%@", [error localizedDescription]);
             }
+            
             
         }
     }@catch (NSException * e) {
